@@ -7,6 +7,7 @@ Real-time trade execution using heap-based matching
 Dynamic order book display (buy/sell snapshot)
 Trade history tracking
 Input validation and clean CLI formatting
+
 🧠 DSA Concepts Used
 Concept	Role in Project
 Structs & Classes	Modeling orders and trades
@@ -15,6 +16,7 @@ Greedy Logic	Matching best price orders immediately
 Vector	Storing executed trades
 Input Validation	Preventing invalid entries
 Modular Design	Scalable architecture (optional split)
+
 📊 Project Flow (Step-by-Step)
 Step	What Happens
 1️⃣	User enters order (type, quantity, price)
@@ -26,6 +28,7 @@ Step	What Happens
 7️⃣	Trade is stored in history
 8️⃣	Order book and trade history are displayed
 9️⃣	User decides to continue or exit
+
 ▶ How to Run
 g++ main.cpp -o lob
 ./lob
