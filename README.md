@@ -1,57 +1,40 @@
-📈 Trade matching System (C++)
-A beginner-friendly terminal-based matching engine written in C++ that simulates buy/sell order flow using heaps and greedy logic.
+# Trade Matching System 📈
 
-🚀 Features
-Guided input for buy/sell orders
-Real-time trade execution using heap-based matching
-Dynamic order book display (buy/sell snapshot)
-Trade history tracking
-Input validation and clean CLI formatting
+A beginner-friendly C++ terminal project that simulates buy/sell order matching using heaps.
 
-🧠 DSA Concepts Used
-Concept	Role in Project
-Structs & Classes	Modeling orders and trades
-Priority Queue	Max-heap for buy orders, Min-heap for sell orders
-Greedy Logic	Matching best price orders immediately
-Vector	Storing executed trades
-Input Validation	Preventing invalid entries
-Modular Design	Scalable architecture (optional split)
+## 💡 Features
+- Guided input for buy/sell orders
+- Real-time trade execution
+- Dynamic order book display
+- Trade history tracking
+- Clean CLI output
 
-📊 Project Flow (Step-by-Step)
-Step	What Happens
-1️⃣	User enters order (type, quantity, price)
-2️⃣	Input is validated
-3️⃣	Order is stored in buy/sell heap
-4️⃣	Matching logic checks top buy/sell
-5️⃣	Trade is executed if prices match
-6️⃣	Quantity is adjusted and leftovers re-added
-7️⃣	Trade is stored in history
-8️⃣	Order book and trade history are displayed
-9️⃣	User decides to continue or exit
+## 🧠 Concepts Used
+- Structs and Classes
+- Priority Queue (Heap)
+- Greedy Matching Logic
+- Vectors and Loops
+- Input Validation
 
-▶ How to Run
+## ▶️ How to Run
+```bash
 g++ main.cpp -o lob
 ./lob
--------------------------------------------
 
-## 📄 Sample Input
-Order Type: buy  
-Quantity: 100  
-Price: 60  
+📝 Sample Input
 
-Order Type: sell  
-Quantity: 50  
-Price: 58
- -----------------------------------------
-## 📤 Sample Output
+Order Type: buy
+Quantity: 100
+Price: 60
+📊 Sample Output
 
 Trade Executed: Rs58 x 50
-
-=== Buy Orders ===  
+Buy Orders:
 [Rs60 x 50] (ID 1)
-
-=== Sell Orders ===  
+Sell Orders:
 (none)
-
-=== Trade History ===  
+Trade History:
 Buy ID 1 matched with Sell ID 2 at Rs58 x 50
+
+👨‍💻 Author
+Sarthak Nigan
